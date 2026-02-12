@@ -1,0 +1,21 @@
+{
+    "document_title": "Artificial Intelligence Guidelines",
+    "organization": "Qatar Central Bank",
+    "year": 2023,
+    "purpose": "Provide ethical, operational, and governance frameworks for the responsible use of AI in the financial sector of Qatar.",
+    "core_principles": [
+        "Accountability and transparency in AI-driven systems",
+        "Data protection, privacy, and compliance with QCB regulations",
+        "Fairness, explainability, and bias mitigation in AI algorithms",
+        "Security, robustness, and resilience of AI systems",
+        "Human oversight and responsible deployment of AI in banking and finance"
+    ],
+    "implementation_recommendations": [
+        "Establish AI governance frameworks within financial institutions",
+        "Ensure model validation and ongoing monitoring of AI systems",
+        "Adopt explainable AI (XAI) methodologies",
+        "Promote cross-institution collaboration on AI innovation",
+        "Develop internal capabilities and training for AI adoption"
+    ],
+    "alignment": "Aligned with Qatar National Vision 2030 and QCB’s digital transformation roadmap."
+}

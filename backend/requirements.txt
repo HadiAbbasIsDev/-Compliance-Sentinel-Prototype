@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+pymupdf
+python-multipart
+python-dotenv
+sentence-transformers
+faiss-cpu
+spacy
+reportlab
+arabic-reshaper
+python-bidi

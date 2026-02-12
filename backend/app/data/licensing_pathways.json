@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "circular_ref": "QCB-FINTECH-2025-001",
+    "title": "Fintech Licensing Pathways & Capital Requirements",
+    "effective_date": "2025-10-20",
+    "applicable_to": "All entities seeking a Fintech License in Qatar",
+    "total_articles": 5
+  },
+  "regulations": [
+    {
+      "id": "qcb-001-1.1.1",
+      "article": "1.1.1",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.1: Category Definition",
+      "category": "licensing_category",
+      "severity": "critical",
+      "title": "Category 1 - Payment Service Provider (PSP)",
+      "text": "Category 1 (Payment Service Provider - PSP): Applies to entities providing domestic or cross-border payment processing or electronic money issuance.",
+      "keywords": ["PSP", "payment processing", "cross-border payment", "electronic money", "e-money", "payment service provider", "Category 1"],
+      "requirements": [
+        "Domestic payment processing",
+        "Cross-border payment processing",
+        "Electronic money issuance"
+      ],
+      "applies_to": ["payment_processors", "e_money_issuers"]
+    },
+    {
+      "id": "qcb-001-1.1.2",
+      "article": "1.1.2",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.1: Category Definition",
+      "category": "licensing_category",
+      "severity": "critical",
+      "title": "Category 2 - Marketplace Lending (P2P/Crowdfunding)",
+      "text": "Category 2 (Marketplace Lending - P2P/Crowdfunding): Applies to platforms facilitating direct lending or capital raising between investors and businesses/consumers.",
+      "keywords": ["P2P", "peer-to-peer", "marketplace lending", "crowdfunding", "direct lending", "capital raising", "Category 2", "investors", "borrowers"],
+      "requirements": [
+        "Platform facilitating direct lending",
+        "Capital raising between investors and businesses/consumers"
+      ],
+      "applies_to": ["p2p_lending", "crowdfunding_platforms", "marketplace_lending"]
+    },
+    {
+      "id": "qcb-001-1.1.3",
+      "article": "1.1.3",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.1: Category Definition",
+      "category": "licensing_category",
+      "severity": "critical",
+      "title": "Category 3 - Digital Wealth Management",
+      "text": "Category 3 (Digital Wealth Management): Applies to entities offering automated investment advice (Robo-advisory) or portfolio management.",
+      "keywords": ["digital wealth management", "robo-advisory", "automated investment", "portfolio management", "Category 3"],
+      "requirements": [
+        "Automated investment advice",
+        "Portfolio management services"
+      ],
+      "applies_to": ["robo_advisors", "wealth_management", "portfolio_management"]
+    },
+    {
+      "id": "qcb-001-1.2.1",
+      "article": "1.2.1",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.2: Minimum Capital Requirements",
+      "category": "capital_requirements",
+      "severity": "critical",
+      "title": "PSP Capital Requirement",
+      "text": "PSP (Category 1): Minimum regulatory capital of QAR 5,000,000 must be maintained at all times.",
+      "keywords": ["capital", "QAR 5,000,000", "5000000", "PSP", "Category 1", "minimum capital", "regulatory capital"],
+      "requirements": [
+        "Minimum regulatory capital: QAR 5,000,000",
+        "Must be maintained at all times"
+      ],
+      "numeric_value": 5000000,
+      "currency": "QAR",
+      "applies_to": ["payment_processors"],
+      "validation_pattern": "QAR\\s*([\\d,]+)",
+      "threshold": 5000000
+    },
+    {
+      "id": "qcb-001-1.2.2",
+      "article": "1.2.2",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.2: Minimum Capital Requirements",
+      "category": "capital_requirements",
+      "severity": "critical",
+      "title": "Marketplace Lending Capital Requirement",
+      "text": "Marketplace Lending (Category 2): Minimum regulatory capital of QAR 7,500,000 must be maintained at all times.",
+      "keywords": ["capital", "QAR 7,500,000", "7500000", "marketplace lending", "P2P", "Category 2", "minimum capital", "regulatory capital"],
+      "requirements": [
+        "Minimum regulatory capital: QAR 7,500,000",
+        "Must be maintained at all times"
+      ],
+      "numeric_value": 7500000,
+      "currency": "QAR",
+      "applies_to": ["p2p_lending", "marketplace_lending"],
+      "validation_pattern": "QAR\\s*([\\d,]+)",
+      "threshold": 7500000
+    },
+    {
+      "id": "qcb-001-1.2.3",
+      "article": "1.2.3",
+      "section": "SECTION 1: LICENSING CATEGORIES",
+      "subsection": "Article 1.2: Minimum Capital Requirements",
+      "category": "capital_requirements",
+      "severity": "critical",
+      "title": "Digital Wealth Management Capital Requirement",
+      "text": "Digital Wealth Management (Category 3): Minimum regulatory capital of QAR 4,000,000 must be maintained at all times.",
+      "keywords": ["capital", "QAR 4,000,000", "4000000", "digital wealth", "robo-advisory", "Category 3", "minimum capital", "regulatory capital"],
+      "requirements": [
+        "Minimum regulatory capital: QAR 4,000,000",
+        "Must be maintained at all times"
+      ],
+      "numeric_value": 4000000,
+      "currency": "QAR",
+      "applies_to": ["wealth_management"],
+      "validation_pattern": "QAR\\s*([\\d,]+)",
+      "threshold": 4000000
+    },
+    {
+      "id": "qcb-001-2.1.1",
+      "article": "2.1.1",
+      "section": "SECTION 2: APPLICATION & GOVERNANCE SUBMISSIONS",
+      "subsection": "Article 2.1: Key Personnel Documents",
+      "category": "personnel_requirements",
+      "severity": "critical",
+      "title": "Fit and Proper Requirements",
+      "text": "Fit and Proper: CVs, organizational charts, and police clearance certificates must be submitted for all Board Members, the CEO, and the designated Compliance Officer.",
+      "keywords": ["fit and proper", "CV", "organizational chart", "police clearance", "board members", "CEO", "compliance officer", "personnel"],
+      "requirements": [
+        "CVs for all Board Members",
+        "CVs for CEO",
+        "CVs for designated Compliance Officer",
+        "Organizational charts",
+        "Police clearance certificates for all key personnel"
+      ],
+      "required_roles": ["board_members", "ceo", "compliance_officer"],
+      "applies_to": ["all_applicants"]
+    },
+    {
+      "id": "qcb-001-2.1.2",
+      "article": "2.1.2",
+      "section": "SECTION 2: APPLICATION & GOVERNANCE SUBMISSIONS",
+      "subsection": "Article 2.1: Key Personnel Documents",
+      "category": "corporate_structure",
+      "severity": "critical",
+      "title": "Articles of Association Requirement",
+      "text": "Documentation of Structure: The final, signed Articles of Association (AoA) must be submitted before the Conditional License is issued.",
+      "keywords": ["articles of association", "AoA", "corporate structure", "conditional license", "documentation"],
+      "requirements": [
+        "Final, signed Articles of Association must be submitted",
+        "Required before Conditional License issuance"
+      ],
+      "applies_to": ["all_applicants"],
+      "timing": "before_conditional_license"
+    }
+  ]
+}

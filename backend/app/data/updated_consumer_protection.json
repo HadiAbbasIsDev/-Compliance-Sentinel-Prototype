@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "circular_ref": "QCB-FINTECH-2025-003",
+    "title": "Digital Consumer Protection, AML/KYC & Data Handling",
+    "effective_date": "2025-10-20",
+    "applicable_to": "Digital Payment Service Providers and P2P Lending Platforms (All Fintech entities)",
+    "total_articles": 18
+  },
+  "regulations": [
+    {
+      "id": "qcb-003-1.1.1",
+      "article": "1.1.1",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.1: Customer Due Diligence (CDD)",
+      "category": "aml_kyc",
+      "severity": "critical",
+      "title": "Mandatory Enhanced CDD",
+      "text": "Mandatory Verification: All regulated Fintech entities must implement enhanced Customer Due Diligence (CDD) procedures for any user transacting more than QAR 10,000 per calendar month.",
+      "keywords": ["CDD", "customer due diligence", "enhanced CDD", "QAR 10,000", "10000", "transaction threshold", "verification"],
+      "requirements": [
+        "Enhanced CDD procedures for users transacting > QAR 10,000/month",
+        "Must be implemented by all regulated Fintech entities"
+      ],
+      "numeric_value": 10000,
+      "currency": "QAR",
+      "threshold_period": "monthly",
+      "applies_to": ["all_fintech_entities"],
+      "validation_pattern": "QAR\\s*([\\d,]+)\\s*per\\s*(month|calendar month)"
+    },
+    {
+      "id": "qcb-003-1.1.2",
+      "article": "1.1.2",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.1: Customer Due Diligence (CDD)",
+      "category": "aml_kyc",
+      "severity": "critical",
+      "title": "Source of Funds Verification",
+      "text": "Source of Funds: For high-risk customers or transactions exceeding QAR 50,000, the entity must obtain and maintain records documenting the verified source of funds and source of wealth.",
+      "keywords": ["source of funds", "source of wealth", "QAR 50,000", "50000", "high-risk", "transaction threshold", "verification"],
+      "requirements": [
+        "Obtain verified source of funds for transactions > QAR 50,000",
+        "Obtain verified source of wealth for high-risk customers",
+        "Maintain documentation records"
+      ],
+      "numeric_value": 50000,
+      "currency": "QAR",
+      "applies_to": ["high_risk_customers", "large_transactions"],
+      "validation_pattern": "QAR\\s*([\\d,]+)",
+      "threshold": 50000
+    },
+    {
+      "id": "qcb-003-1.1.3",
+      "article": "1.1.3",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.1: Customer Due Diligence (CDD)",
+      "category": "aml_kyc",
+      "severity": "critical",
+      "title": "KYC Documentation Requirements",
+      "text": "KYC Documentation: A minimum of two forms of government-issued identification must be verified using digital and non-editable means. Proof of Residency must be obtained for all international users.",
+      "keywords": ["KYC", "identification", "government ID", "two forms", "proof of residency", "international users", "verification"],
+      "requirements": [
+        "Minimum two forms of government-issued ID",
+        "Digital and non-editable verification means",
+        "Proof of Residency for all international users"
+      ],
+      "minimum_id_count": 2,
+      "applies_to": ["all_users"],
+      "special_requirements": {
+        "international_users": ["proof_of_residency"]
+      }
+    },
+    {
+      "id": "qcb-003-1.1.4",
+      "article": "1.1.4",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.1: Customer Due Diligence (CDD)",
+      "category": "aml_policy",
+      "severity": "critical",
+      "title": "AML/CFT Policy Document Requirement",
+      "text": "Policy Document: The entity must submit a written, Board-approved Anti-Money Laundering (AML) and Counter-Financing of Terrorism (CFT) Policy, clearly outlining transaction monitoring rules.",
+      "keywords": ["AML policy", "CFT policy", "board-approved", "transaction monitoring", "policy document", "anti-money laundering"],
+      "requirements": [
+        "Written AML and CFT Policy",
+        "Board approval required",
+        "Must outline transaction monitoring rules",
+        "Must be submitted to QCB"
+      ],
+      "applies_to": ["all_applicants"],
+      "document_type": "policy",
+      "approval_required": "board"
+    },
+    {
+      "id": "qcb-003-1.2.1",
+      "article": "1.2.1",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.2: Transaction Monitoring",
+      "category": "transaction_monitoring",
+      "severity": "critical",
+      "title": "Automated Transaction Monitoring System",
+      "text": "Suspicious Activity: The entity must deploy an automated transaction monitoring system capable of identifying and flagging suspicious activity based on patterns, velocity, and deviation from typical customer behavior.",
+      "keywords": ["transaction monitoring", "automated system", "suspicious activity", "patterns", "velocity", "deviation", "customer behavior"],
+      "requirements": [
+        "Deploy automated transaction monitoring system",
+        "System must identify suspicious activity",
+        "Based on patterns, velocity, and behavioral deviation"
+      ],
+      "system_type": "automated",
+      "detection_criteria": ["patterns", "velocity", "behavioral_deviation"],
+      "applies_to": ["all_fintech_entities"]
+    },
+    {
+      "id": "qcb-003-1.2.2",
+      "article": "1.2.2",
+      "section": "SECTION 1: ANTI-MONEY LAUNDERING (AML) & KYC REQUIREMENTS",
+      "subsection": "Article 1.2: Transaction Monitoring",
+      "category": "reporting",
+      "severity": "critical",
+      "title": "Suspicious Transaction Reporting",
+      "text": "Reporting: All Suspicious Transaction Reports (STRs) must be filed with the relevant Qatari authorities within 48 hours of detection.",
+      "keywords": ["STR", "suspicious transaction report", "48 hours", "reporting", "Qatari authorities", "detection"],
+      "requirements": [
+        "File STRs with Qatari authorities",
+        "Must be filed within 48 hours of detection"
+      ],
+      "time_limit": "48_hours",
+      "applies_to": ["all_fintech_entities"]
+    },
+    {
+      "id": "qcb-003-2.1.1",
+      "article": "2.1.1",
+      "section": "SECTION 2: DIGITAL CONSUMER PROTECTION & DATA GOVERNANCE",
+      "subsection": "Article 2.1: Data Protection and Residency",
+      "category": "data_residency",
+      "severity": "critical",
+      "title": "Data Residency Requirement",
+      "text": "Data Residency: All customer personal identifiable information (PII) and transactional data related to Qatari citizens and residents must be stored on servers physically located within the State of Qatar.",
+      "keywords": ["data residency", "PII", "personal identifiable information", "transactional data", "Qatar", "servers", "physical location", "storage"],
+      "requirements": [
+        "All customer PII must be stored in Qatar",
+        "All transactional data must be stored in Qatar",
+        "Servers must be physically located within Qatar"
+      ],
+      "prohibited_locations": ["AWS Ireland", "AWS Singapore", "AWS US", "international servers", "cloud outside Qatar"],
+      "required_location": "State of Qatar",
+      "applies_to": ["all_fintech_entities"],
+      "data_types": ["PII", "transactional_data"],
+      "validation_patterns": [
+        "AWS.*(Ireland|Singapore|US|Europe|international)",
+        "cloud.*(outside|abroad|international)",
+        "servers?.*(overseas|abroad|international|foreign)"
+      ]
+    },
+    {
+      "id": "qcb-003-2.1.2",
+      "article": "2.1.2",
+      "section": "SECTION 2: DIGITAL CONSUMER PROTECTION & DATA GOVERNANCE",
+      "subsection": "Article 2.1: Data Protection and Residency",
+      "category": "data_consent",
+      "severity": "medium",
+      "title": "Data Sharing Consent Requirement",
+      "text": "Consent: Explicit, informed consent must be obtained from the customer for the sharing of any data with third-party service providers (including cloud providers).",
+      "keywords": ["consent", "explicit consent", "informed consent", "third-party", "data sharing", "cloud providers"],
+      "requirements": [
+        "Explicit, informed consent required",
+        "Required for sharing data with third-party providers",
+        "Includes cloud providers"
+      ],
+      "consent_type": "explicit_and_informed",
+      "applies_to": ["all_data_sharing"],
+      "includes": ["cloud_providers", "third_party_services"]
+    },
+    {
+      "id": "qcb-003-2.2.1",
+      "article": "2.2.1",
+      "section": "SECTION 2: DIGITAL CONSUMER PROTECTION & DATA GOVERNANCE",
+      "subsection": "Article 2.2: Corporate Governance and Audit",
+      "category": "compliance_officer",
+      "severity": "critical",
+      "title": "Compliance Officer Requirement",
+      "text": "Compliance Officer: The entity must appoint a designated, independent Compliance Officer whose CV and credentials must be submitted to the QCB for approval prior to licensing.",
+      "keywords": ["compliance officer", "designated", "independent", "CV", "credentials", "QCB approval", "prior to licensing"],
+      "requirements": [
+        "Appoint designated Compliance Officer",
+        "Officer must be independent",
+        "Submit CV and credentials to QCB",
+        "Required prior to licensing"
+      ],
+      "role_characteristics": ["designated", "independent"],
+      "submission_required": ["CV", "credentials"],
+      "timing": "prior_to_licensing",
+      "applies_to": ["all_applicants"],
+      "validation_patterns": [
+        "do not.*have.*compliance officer",
+        "no.*compliance officer",
+        "plan to.*compliance",
+        "assign.*duties.*(to|Head of Finance)",
+        "temporary.*compliance"
+      ]
+    },
+    {
+      "id": "qcb-003-2.2.2",
+      "article": "2.2.2",
+      "section": "SECTION 2: DIGITAL CONSUMER PROTECTION & DATA GOVERNANCE",
+      "subsection": "Article 2.2: Corporate Governance and Audit",
+      "category": "audit_requirements",
+      "severity": "medium",
+      "title": "Annual External Audit Requirement",
+      "text": "Annual Audit: An annual external audit of all technology systems and compliance policies is mandatory.",
+      "keywords": ["annual audit", "external audit", "technology systems", "compliance policies", "mandatory"],
+      "requirements": [
+        "Annual external audit mandatory",
+        "Must cover technology systems",
+        "Must cover compliance policies"
+      ],
+      "frequency": "annual",
+      "audit_type": "external",
+      "scope": ["technology_systems", "compliance_policies"],
+      "applies_to": ["all_licensed_entities"]
+    },
+    {
+      "id": "qcb-dh-4.4",
+      "article": "4.4",
+      "section": "DATA HANDLING: Organizational Governance",
+      "subsection": "Data Privacy Officer",
+      "category": "data_privacy_officer",
+      "severity": "critical",
+      "title": "Data Privacy Officer Appointment",
+      "text": "A Financial Institution must appoint a Data Privacy Officer (DPO) who possesses the necessary knowledge and experience in data privacy, notifying QCB of the appointed DPO and submit the required Fit and Proper Form.",
+      "keywords": ["Data Privacy Officer", "DPO", "fit and proper", "appointment", "QCB notification"],
+      "requirements": [
+        "Appoint qualified DPO with data privacy expertise",
+        "Notify QCB of DPO appointment",
+        "Submit Fit and Proper Form"
+      ],
+      "applies_to": ["all_fintech_entities"],
+      "submission_required": ["Fit and Proper Form"],
+      "validation_patterns": [
+        "no.*data privacy officer",
+        "no.*DPO",
+        "plan to.*appoint.*DPO"
+      ]
+    },
+    {
+      "id": "qcb-dh-5.4",
+      "article": "5.4",
+      "section": "DATA HANDLING: Framework and Policies",
+      "subsection": "Privacy Policy Publication",
+      "category": "privacy_policy",
+      "severity": "critical",
+      "title": "External Privacy Policy Requirement",
+      "text": "A Financial Institution must publish its External Privacy Policy statement on externally hosted channels, informing customers of their rights and how their data will be collected, accessed, processed, shared and retained.",
+      "keywords": ["external privacy policy", "customer rights", "data collection", "transparency", "publication"],
+      "requirements": [
+        "Publish External Privacy Policy publicly",
+        "Inform customers of data rights",
+        "Explain data lifecycle (collection, processing, sharing, retention)"
+      ],
+      "applies_to": ["all_fintech_entities"],
+      "validation_patterns": [
+        "no.*privacy policy",
+        "privacy policy.*not.*published",
+        "missing.*privacy policy"
+      ]
+    },
+    {
+      "id": "qcb-dh-7.3",
+      "article": "7.3",
+      "section": "DATA HANDLING: Data Handling Requirements",
+      "subsection": "Sensitive Data Classification",
+      "category": "data_classification",
+      "severity": "critical",
+      "title": "SPI and SFI Highest Classification",
+      "text": "A Financial Institution must classify and manage Sensitive Personal Information (SPI) and Sensitive Financial Information (SFI) as per the highest, most strict classification available.",
+      "keywords": ["SPI", "SFI", "sensitive personal information", "sensitive financial information", "highest classification"],
+      "requirements": [
+        "Classify SPI with highest security level",
+        "Classify SFI with highest security level",
+        "Apply strictest management controls"
+      ],
+      "applies_to": ["all_fintech_entities"],
+      "data_types": ["SPI", "SFI"]
+    },
+    {
+      "id": "qcb-dh-7.6",
+      "article": "7.6",
+      "section": "DATA HANDLING: Data Handling Requirements",
+      "subsection": "Primary Environment Location",
+      "category": "data_residency",
+      "severity": "critical",
+      "title": "Primary Data Environment Must Be in Qatar",
+      "text": "A Financial Institution must ensure its primary environment (main data storage and processing) for PII, SPI and SFI resides within the State of Qatar.",
+      "keywords": ["primary environment", "data storage", "data processing", "Qatar", "PII", "SPI", "SFI"],
+      "requirements": [
+        "Primary data storage must be in Qatar",
+        "Primary processing environment must be in Qatar",
+        "Applies to all PII, SPI, and SFI"
+      ],
+      "prohibited_locations": ["foreign jurisdictions", "international cloud"],
+      "required_location": "State of Qatar",
+      "applies_to": ["all_fintech_entities"],
+      "data_types": ["PII", "SPI", "SFI"],
+      "validation_patterns": [
+        "primary.*environment.*(outside|abroad|foreign)",
+        "main.*storage.*(international|overseas)",
+        "processing.*environment.*(outside Qatar)"
+      ]
+    },
+    {
+      "id": "qcb-dh-9.6",
+      "article": "9.6",
+      "section": "DATA HANDLING: Third Party Access",
+      "subsection": "Third Party Data Sharing",
+      "category": "third_party_consent",
+      "severity": "critical",
+      "title": "Customer Consent for Third-Party Sharing",
+      "text": "A Financial Institution must collect consent from customers prior to sharing their information with a Third Party, unless shared for legal, regulatory purposes, or contract fulfilment.",
+      "keywords": ["third party consent", "customer consent", "data sharing", "third party"],
+      "requirements": [
+        "Obtain customer consent before third-party sharing",
+        "Exceptions: legal, regulatory, or contract purposes"
+      ],
+      "applies_to": ["all_fintech_entities"],
+      "exemptions": ["legal_purposes", "regulatory_purposes", "contract_fulfilment"]
+    },
+    {
+      "id": "qcb-dh-11.3",
+      "article": "11.3",
+      "section": "DATA HANDLING: Data Retention",
+      "subsection": "Minimum Retention Periods",
+      "category": "data_retention",
+      "severity": "critical",
+      "title": "Data Retention Requirements",
+      "text": "A Financial Institution must retain data per minimum periods: SFI (Sensitive Financial Information) - 10 years, Personal Data/PII/SPI - 10 years, Technical Information - 1 year.",
+      "keywords": ["data retention", "retention period", "10 years", "SFI", "PII", "SPI"],
+      "requirements": [
+        "Retain SFI for minimum 10 years",
+        "Retain Personal Data/PII/SPI for minimum 10 years",
+        "Retain Technical Information for minimum 1 year"
+      ],
+      "retention_periods": {
+        "SFI": "10_years",
+        "personal_data": "10_years",
+        "PII": "10_years",
+        "SPI": "10_years",
+        "technical_information": "1_year"
+      },
+      "applies_to": ["all_fintech_entities"]
+    },
+    {
+      "id": "qcb-dh-14.4",
+      "article": "14.4",
+      "section": "DATA HANDLING: Customer Data Protection",
+      "subsection": "Customer Data Rights",
+      "category": "customer_rights",
+      "severity": "critical",
+      "title": "Customer Data Access and Deletion Rights",
+      "text": "A Financial Institution must establish procedures ensuring customers can: confirm if data is processed, access data copy in machine-readable format, request correction, request processing restriction, request deletion (aligned with retention requirements).",
+      "keywords": ["customer rights", "data access", "data portability", "right to erasure", "GDPR-style rights"],
+      "requirements": [
+        "Confirm data processing to customers",
+        "Provide data in machine-readable format",
+        "Enable correction requests",
+        "Enable deletion requests (with retention exceptions)"
+      ],
+      "customer_rights": ["access", "portability", "correction", "restriction", "erasure"],
+      "applies_to": ["all_fintech_entities"]
+    },
+    {
+      "id": "qcb-dh-15.1",
+      "article": "15.1",
+      "section": "DATA HANDLING: Foreign Data Transfer",
+      "subsection": "Foreign Transfer Approval",
+      "category": "foreign_data_transfer",
+      "severity": "critical",
+      "title": "QCB Approval Required for Foreign Data Transfer",
+      "text": "A Financial Institution must not store or transfer Personal Data, PII, SPI and SFI to a foreign jurisdiction unless it has received approval from QCB.",
+      "keywords": ["foreign transfer", "foreign storage", "QCB approval", "cross-border transfer"],
+      "requirements": [
+        "QCB approval required for ANY foreign data storage",
+        "QCB approval required for ANY foreign data transfer",
+        "Applies to all Personal Data, PII, SPI, SFI"
+      ],
+      "applies_to": ["all_fintech_entities"],
+      "data_types": ["personal_data", "PII", "SPI", "SFI"],
+      "approval_required": "QCB"
+    }
+  ]
+}
