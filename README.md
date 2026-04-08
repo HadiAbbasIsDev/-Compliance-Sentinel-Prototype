@@ -1,7 +1,7 @@
-# Compliance Sentinel – Pakistan Prototype
+# Compliance Sentinel – Prototype
 ### Automated Regulatory Change Management Solution
 
-**Compliance Sentinel** is an AI-driven platform designed for **Pakistani Banks** to automate the monitoring, analysis, and implementation of regulatory changes from bodies like **SBP (State Bank of Pakistan)**, **FBR (Federal Board of Revenue)**, and **SECP**.
+**Compliance Sentinel** is an AI-driven platform designed for ** Banks** to automate the monitoring, analysis, and implementation of regulatory changes from bodies like **SBP (State Bank of )**, **FBR (Federal Board of Revenue)**, and **SECP**.
 
 ## Core Value Proposition
 - **Automated Monitoring**: Ingests new circulars and notifications (e.g., SBP BPRD circulars) in real-time.
